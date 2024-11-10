@@ -1,0 +1,8 @@
+{
+  "namespace": "com.kafka.learn.schema",
+  "type": "record",
+  "name": "MessageKey",
+  "fields": [
+    {"name": "key","type": ["null","string"]}
+  ]
+}

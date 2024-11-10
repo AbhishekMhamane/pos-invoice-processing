@@ -1,0 +1,12 @@
+{
+  "namespace": "com.kafka.learn.schema",
+  "type": "record",
+  "name": "LineItem",
+  "fields": [
+    {"name": "itemCode","type": ["null","string"]},
+    {"name": "itemDescription","type": ["null","string"]},
+    {"name": "itemPrice","type": ["null","double"]},
+    {"name": "itemQty","type": ["null","int"]},
+    {"name": "totalValue","type": ["null","double"]}
+  ]
+}

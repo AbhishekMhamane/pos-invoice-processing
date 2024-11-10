@@ -1,0 +1,21 @@
+{"namespace": "com.kafka.learn.schema",
+  "type": "record",
+  "name": "HadoopRecord",
+  "fields": [
+    {"name": "invoiceNumber", "type": ["null", "string"]},
+    {"name": "createdTime",  "type":["null", "long"]},
+    {"name": "storeID",  "type": ["null", "string"]},
+    {"name": "posID",  "type": ["null", "string"]},
+    {"name": "customerType",  "type": ["null", "string"]},
+    {"name": "paymentMethod",  "type": ["null", "string"]},
+    {"name": "deliveryType",  "type": ["null", "string"]},
+    {"name": "city",  "type": ["null", "string"]},
+    {"name": "state",  "type": ["null", "string"]},
+    {"name": "pinCode",  "type": ["null", "string"]},
+    {"name": "itemCode",  "type": ["null", "string"]},
+    {"name": "itemDescription",  "type": ["null", "string"]},
+    {"name": "itemPrice",  "type": ["null", "double"]},
+    {"name": "itemQty",  "type": ["null", "int"]},
+    {"name": "totalValue",  "type": ["null", "double"]}
+  ]
+}
