@@ -31,6 +31,7 @@ public class RewardStateProcessor implements ValueTransformer<PosInvoice, Notifi
     } else {
       totalRewards = notification.getEarnedLoyaltyPoints();
     }
+    notification.setTotalLoyaltyPoints(totalRewards);
     stateStore.put(posInvoice.getCustomerCardNo().toString(), totalRewards);
     return notification;
   }
