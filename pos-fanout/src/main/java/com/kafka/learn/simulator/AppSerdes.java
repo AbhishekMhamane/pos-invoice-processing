@@ -1,9 +1,6 @@
 package com.kafka.learn.simulator;
 
-import com.kafka.learn.schema.HadoopRecord;
-import com.kafka.learn.schema.MessageKey;
-import com.kafka.learn.schema.Notification;
-import com.kafka.learn.schema.PosInvoice;
+import com.kafka.learn.schema.*;
 import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
@@ -38,6 +35,12 @@ public class AppSerdes {
 
   public Serde<HadoopRecord> getHadoopRecordSerde() {
     Serde<HadoopRecord> serde = new SpecificAvroSerde<>();
+    serde.configure(kafkaSerdeSchemaConfigBuilder.getConfiguration(), false);
+    return serde;
+  }
+
+  public Serde<Store> getStoreSerde() {
+    Serde<Store> serde = new SpecificAvroSerde<>();
     serde.configure(kafkaSerdeSchemaConfigBuilder.getConfiguration(), false);
     return serde;
   }

@@ -1,0 +1,9 @@
+{
+  "namespace": "com.kafka.learn.schema",
+  "type": "record",
+  "name": "Store",
+  "fields": [
+    {"name": "storeID","type": ["null","string"]},
+    {"name": "totalSale","type": ["null","double"]}
+  ]
+}
