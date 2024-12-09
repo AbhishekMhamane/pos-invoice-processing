@@ -5,6 +5,7 @@ public class Constants {
   public final static String DELIVERY_TYPE_HOME_DELIVERY = "HOME-DELIVERY";
   public final static String CUSTOMER_TYPE_PRIME = "PRIME";
   public final static Double LOYALTY_FACTOR = 0.02;
-  public final static String  REWARD_STATE_STORE_NAME = "RewardsStore";
+  public final static String  REWARD_STATE_STORE_NAME = "rewards-store";
+  public final static String  STORE_SALES_STATE_STORE_NAME = "sales-store";
 
 }
